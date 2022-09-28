@@ -1,212 +1,244 @@
-:root{
-    --verde: #0c443a;
-    --limon: #25d1b2;
-    --degradado: linear-gradient(90deg, var(--limon), var(var(--verde)));
+:root {
+  --verde: #0c443a;
+  --limon: #25d1b2;
+  --degradado: linear-gradient(90deg, var(--limon), var(var(--verde)));
 }
-*{
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    outline: none;
-    border: none;
-    text-transform: capitalize; /* para que la primera letra del menu siempre este en mayuscula */
+
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  /* para que la primera letra del menu siempre este en mayuscula */
 }
+
 /* *::selection{
     background: var(--limon);
     color: white;
 } */
-html{
-    font-size: 62.5%;
-    overflow: hidden; /* para no tener ningun problema ABERIGUAR */
+html {
+  font-size: 62.5%;
+  overflow: hidden;
+  /* para no tener ningun problema ABERIGUAR */
 }
-body{
-    background: white;
+
+body {
+  background: white;
 }
 
 /* Header-------------------------------------------------- */
-header{
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(
-    to top,
-    #0c443a 0%,
-    #0c443a 50%,
-    #25d1b2 50%,
-    #25d1b2 100%
-  );
+header {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to top,
+      #0c443a 0%,
+      #0c443a 50%,
+      #25d1b2 50%,
+      #25d1b2 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
 }
-header .logo{
-    font-size: 10rem;
-    color: var(--verde);
-    font-weight: bolder;
-    height: 60%;
+
+header .logo {
+  font-size: 10rem;
+  color: var(--verde);
+  font-weight: bolder;
+  height: 60%;
 }
+
 header .logo span {
-    color: var(--limon);
+  color: var(--limon);
 }
-.frontend{
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10%;
+
+.frontend {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
 }
-.front-left{
-    width: 50%;
-    height: 4px;
-    background-color: var(--verde);
+
+.front-left {
+  width: 80%;
+  height: 4px;
+  background-color: var(--verde);
 }
-.front-rigth{
-    width: 50%;
-    text-align: center;
-    font-size: 1.8rem;
-    font-weight: bold;
+
+.front-rigth {
+  width: 20%;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
-.front-rigth a{
-    color: var(--verde);
+
+.front-rigth a {
+  color: var(--verde);
 }
-.container-icon{
-    width: 100vw;
-    height: 10%;
-    display: flex;
-    align-items: center;
+
+.container-icon {
+  width: 100vw;
+  height: 10%;
+  display: flex;
+  align-items: center;
 }
-.icon-bacio{
-    background-color: var(--limon);
-    width: 50%;
-    height: 4px;
+
+.icon-bacio {
+  background-color: var(--limon);
+  width: 80%;
+  height: 4px;
 }
-.icon{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.icon {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.icon a{
-    font-size: 2rem;
-    width: 30px;
-    height: 30px;
-    color: var(--limon);
-    border: 2px solid var(--limon);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10px;
+
+.icon a {
+  font-size: 2rem;
+  width: 30px;
+  height: 30px;
+  color: var(--limon);
+  border: 2px solid var(--limon);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
 }
 
 /* nav---------- */
-.invicible{
-    width: 200px;
-    text-align: end;
+.invicible {
+  width: 200px;
+  text-align: end;
 }
+
 .exit {
-    font-size: 1.8rem;
-    color: rgba(255, 255, 255, 0.90);
-    padding:2px 5px;
-    background-color:#2b2b2b9f;
-    border-radius: 3px;
+  font-size: 1.8rem;
+  color: rgba(255, 255, 255, 0.90);
+  padding: 2px 5px;
+  background-color: #2b2b2b9f;
+  border-radius: 3px;
 }
-.exit:hover{
-    color: var(--limon);
+
+.exit:hover {
+  color: var(--limon);
 }
-.section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: sans-serif;
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
 }
+
 #menu {
-    list-style: none;
-    width: 200px;
+  list-style: none;
+  width: 200px;
 }
+
 #menu li {
-    margin: 8px 0;
-    position: relative;
-    background-color: #2b2b2b9f;
-    border-radius: 5px;
-    overflow: hidden;
-    text-align: center;
+  margin: 8px 0;
+  position: relative;
+  background-color: #2b2b2b9f;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
 }
 
 #menu li::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 5px;background-color: #f0f;
-    transition: .4s all ease-in-out;
-}
-#menu li:nth-child(1)::before{
-    background-color: var(--verde);
-}
-#menu li:nth-child(2)::before{
-    background-color: var(--verde);
-}
-#menu li:nth-child(3)::before{
-    background-color: var(--verde);
-}
-#menu li:nth-child(4)::before{
-    background-color: var(--verde);
-}
-#menu li:nth-child(5)::before{
-    background-color: var(--limon);
-}
-#menu li:nth-child(6)::before{
-    background-color: var(--limon);
-}
-#menu li:nth-child(7)::before{
-    background-color: var(--limon);
-}
-#menu li:nth-child(8)::before{
-    background-color: var(--limon);
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background-color: #f0f;
+  transition: .4s all ease-in-out;
 }
 
-#menu li:hover::before{
-    border-radius: 0 50px 50px 0;
-    width: 110%;
-} 
+#menu li:nth-child(1)::before {
+  background-color: var(--verde);
+}
+
+#menu li:nth-child(2)::before {
+  background-color: var(--verde);
+}
+
+#menu li:nth-child(3)::before {
+  background-color: var(--verde);
+}
+
+#menu li:nth-child(4)::before {
+  background-color: var(--verde);
+}
+
+#menu li:nth-child(5)::before {
+  background-color: var(--limon);
+}
+
+#menu li:nth-child(6)::before {
+  background-color: var(--limon);
+}
+
+#menu li:nth-child(7)::before {
+  background-color: var(--limon);
+}
+
+#menu li:nth-child(8)::before {
+  background-color: var(--limon);
+}
+
+#menu li:hover::before {
+  border-radius: 0 50px 50px 0;
+  width: 110%;
+}
 
 #menu li a {
-    display: block;
-    padding: 10px 20px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    position: relative;
-    z-index: 1;
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
 }
-nav{
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 220px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000; /* los elementos simpre se posiciones en la parte superior */
+
+nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  /* los elementos simpre se posiciones en la parte superior */
 }
-.barra{
-    width: 10px;
-    height: 80px;
-    background-color: rgb(255, 255, 255);
-    position: fixed;
-    left: 10px;
-    border-radius: 100px;
+
+.barra {
+  width: 10px;
+  height: 80px;
+  background-color: var(--verde);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  position: fixed;
+  left: 10px;
+  border-radius: 100px;
 }
-.active{
-    display: none;
+
+.active {
+  display: none;
 }
 
 
