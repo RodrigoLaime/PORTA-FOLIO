@@ -130,10 +130,13 @@ header .logo span {
 .exit {
   font-size: 1.8rem;
   color: rgba(255, 255, 255, 0.90);
-  padding: 4px 5px;
-  padding-top: 5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--verde);
-  border-radius: 3px;
+  border-radius: 50%;
   margin-left: 10px;
   border: 1px solid var(--limon);
 }
@@ -239,12 +242,17 @@ nav {
 .barra {
   position: fixed;
   left: 10px;
-  padding: 4px 5px;
-  padding-top: 5px;
+  /* padding: 4px 5px;
+  padding-top: 5px; */
+  width: 40px;
+  height: 40px;
   background-color: var(--verde);
   font-size: 2.5rem;
   color: rgba(255, 255, 255, 0.80);
-  border-radius: 5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid var(--limon);
 }
 
