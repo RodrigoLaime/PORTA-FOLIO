@@ -108,12 +108,16 @@ header .logo span {
   width: 30px;
   height: 30px;
   color: var(--limon);
-  border: 2px solid var(--limon);
+/*   border: 2px solid var(--limon); */
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 10px;
+  transition: .5s ease-in-out;
+}
+.icon a:hover{
+  font-size: 2.5rem;
 }
 
 /* nav---------- */
