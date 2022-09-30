@@ -22,92 +22,105 @@ html {
 .body-about {
   background-color: var(--limon);
   width: 100vw;
-  height: 100vh;
+  height: auto;
+  /*  */
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
+
 /* About main */
-.container-about{
+.container-about {
   width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.top-main{
+
+.top-main {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.container-text-about{
-  width: 100%;
-  min-width: 290px;
+  min-width: 300px;
   max-width: 768px;
-  padding-left: 10px;
-  padding-right: 10px;
 }
-.top-main h2{
+
+/* .container-text-about {
+  width: 100%;
+  padding: 5px 0;
+} */
+
+.top-main h2 {
   width: 100%;
   text-align: center;
-  padding: 5px 10px;
+  padding: 10px 0;
   border: 2px solid var(--verde);
   font-size: 4rem;
   border-radius: 4px;
 }
-.container-text-about h3{
+
+.container-text-about h3 {
   text-align: center;
   padding: 10px 0;
+  margin-top: 15px;
   font-size: 1.4rem;
 }
-.container-text-about p{
-  padding: 5px 0;
+
+.container-text-about p {
+  padding: 15px 10px;
   font-size: 1.2rem;
 }
-/* img{
-  width: 100px;
-  border: 3px solid white;
-} */
+
 /* botton main */
 .botton-main {
   width: 100%;
   max-width: 768px;
   min-width: 300px;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
+  padding: 10px 10px;
   margin-top: 10px;
   border-radius: 4px;
 }
 
-.conatiner-desing{
-  width: 100%;
-}
-.conatiner-desing .h3{
+/* .conatiner-desing {
+  padding: 0 5px;
+} */
+
+.conatiner-desing .h3 {
   text-align: center;
   padding-bottom: 15px;
   border-bottom: 2px solid var(--limon);
 }
-.conatiner-desing h3{
-  padding: 5px;
+
+.conatiner-desing h3 {
+  padding: 5px 0;
+  /*  */
   font-size: 1.4rem;
 }
-.conatiner-desing p{
-  padding: 5px;
+
+.conatiner-desing p {
+  padding: 5px 0;
+  /*  */
   font-size: 1.2rem;
 }
-.conatiner-desing section{
-  width: 100%;
+
+.conatiner-desing section {
+  /*  width: 100%; */
   display: flex;
   padding: 10px 0;
 }
-.conatiner-desing .div{
+
+.conatiner-desing .div {
   width: 70%;
 }
-.conatiner-desing a{
+
+.conatiner-desing a {
   width: 30%;
   display: flex;
   justify-content: center;
@@ -115,11 +128,13 @@ html {
   font-size: 4rem;
   color: var(--limon);
 }
-.container-tecnologi a{
+
+.container-tecnologi a {
   font-size: 1.2rem;
   display: inline;
   padding: 3px;
 }
-.container-tecnologi h3{
+
+.container-tecnologi h3 {
   padding-bottom: 10px;
 }
