@@ -47,7 +47,7 @@ header {
 }
 
 header .logo {
-  font-size: 10rem;
+  font-size: 12rem;
   color: var(--verde);
   font-weight: bolder;
   height: 60%;

@@ -138,3 +138,26 @@ html {
 .container-tecnologi h3 {
   padding-bottom: 10px;
 }
+@media (min-width: 768px){
+  .top-main h2{
+    font-size: 6rem;
+  }
+  .container-text-about h3{
+    font-size: 1.8rem;
+  }
+  .container-text-about p {
+    font-size: 1.5rem;
+  }
+  .conatiner-desing h3{
+    font-size: 1.6rem;
+  }
+  .conatiner-desing p {
+    font-size: 1.4rem;
+  }
+  .conatiner-desing a{
+    font-size: 5rem;
+  }
+  .container-tecnologi a{
+    font-size: 1.4rem;
+  }
+}
