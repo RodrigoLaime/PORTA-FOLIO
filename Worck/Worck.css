@@ -28,6 +28,7 @@ body {
 }
 
 main {
+  margin: 20px 0;
   width: 80%;
   max-width: 768px;
   min-width: 320px;
