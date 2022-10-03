@@ -47,7 +47,7 @@ header {
 }
 
 header .logo {
-  font-size: 12rem;
+  font-size: 6rem;
   color: var(--verde);
   font-weight: bolder;
   height: 60%;
@@ -66,13 +66,13 @@ header .logo span {
 }
 
 .front-left {
-  width: 80%;
+  width: 50%;
   height: 4px;
   background-color: var(--verde);
 }
 
 .front-rigth {
-  width: 20%;
+  width: 50%;
   text-align: center;
   font-size: 1.8rem;
   font-weight: bold;
@@ -91,12 +91,12 @@ header .logo span {
 
 .icon-bacio {
   background-color: var(--limon);
-  width: 80%;
+  width: 50%;
   height: 4px;
 }
 
 .icon {
-  width: 20%;
+  width: 50%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -244,12 +244,14 @@ nav {
 .barra {
   position: fixed;
   left: 10px;
+  top: 15px;
   /* padding: 4px 5px;
   padding-top: 5px; */
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background-color: var(--verde);
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
+  font-size: 1.8rem;
   color: rgba(255, 255, 255, 0.80);
   border-radius: 50%;
   display: flex;
