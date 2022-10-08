@@ -1,0 +1,208 @@
+:root {
+    --verde: #0c443a;
+    --limon: #25d1b2;
+    --degradado: linear-gradient(90deg, var(--limon), var(--verde));
+  }
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: var(--limon);
+}
+/* Navegacion---------------------------- */
+header{
+    width: 100%;
+    height: 50px;
+    background-color:#0c443a28;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+/* Main-------------------------------------- */
+main {
+    width: 100%;
+    background-color: var(--limon);
+}
+article{
+    width: 90%;
+    margin: 0 auto;
+   /*  background-color: fuchsia; */
+}
+.section-top{
+    width: 100%;
+/*     background-color: blue; */
+}
+.section-top h2{
+    font-size: 3rem;
+    padding: 35px 0 10px 0;
+    margin-left: 10px;
+    border-bottom: 2px solid;
+}
+.section-top p{
+    font-size: 2rem;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: var(--verde);
+}
+
+.section-bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   /*  background-color: salmon; */
+}
+.container-worck{
+    margin: 10px;
+    padding: 20px;
+   /*  background-color:#0c443a86; */
+    border-radius: 20px;
+    box-shadow: 0px 0px 60px 5px rgba(56, 56, 56, 0.5);
+-webkit-box-shadow: 0px 0px 60px 5px rgba(56, 56, 56, 0.5);
+-moz-box-shadow: 0px 0px 60px 5px rgba(56, 56, 56, 0.5);
+}
+.container-worck button{
+    background-color: rgb(56, 56, 56);
+    border: none;
+    padding: 5px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: white;
+}
+.one{
+    background-color: rgba(255, 0, 0, 0.25);
+}
+.two{
+    background-color: rgba(0, 0, 255, 0.25);
+}
+.three{
+    background-color: rgba(255, 0, 255, 0.25);
+}
+.for{
+    background-color: rgba(126, 252, 0, 0.25);
+}
+.five{
+    background-color: rgba(128, 128, 128, 0.25);
+}
+.six{
+    background-color: rgba(139, 0, 0, 0.25);
+}
+.seven{
+    background-color: rgba(255, 166, 0, 0.25);
+}
+.eight{
+    background-color: rgba(0, 128, 0, 0.25);
+}
+.nain{
+    background-color: rgba(255, 255, 0, 0.25);
+}
+.ten{
+    background-color: rgba(64, 224, 208, 0.25);
+}
+.container-worck h3{
+    font-size: 1.6rem;
+    padding: 10px 0;
+}
+.container-worck p{
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+}
+.container-worck .container-icon{
+  /*   background-color: firebrick; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+.container-worck .container-icon .icon-left{
+  /*   background-color: forestgreen; */
+    padding: 10px;
+    border-right: 2px solid;
+}
+.container-worck .container-icon .icon-left a{
+    font-size: 1.3rem;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    background-color:  rgb(56, 56, 56);
+}
+.container-worck .container-icon .icon-rigth{
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 8px;
+    background-color:  rgb(56, 56, 56);
+}
+.container-worck .container-icon .icon-rigth a{
+    /* border-radius: 50%; */
+    /* padding: 10px; */
+    color: white;
+    font-size: 1.3rem;
+}
+
+/* .container-worck div{
+    padding: 10px 0;
+/*     background-color: red; 
+}
+.container-worck div a{
+    font-size: 1.6rem;
+    padding-right: 10px;
+    color: white;
+}
+.container-worck h3{
+    font-size: 1.6rem;
+    border-top: 3px solid;
+    padding-top: 10px;
+    border-radius: 10px 10px 0 0;
+}
+.container-worck p{
+    padding: 10px 0;
+    font-size: 1.2rem;
+    border-bottom: 3px solid;
+    border-radius: 0 0 10px 10px;
+}
+ */
+
+
+ /* mediaquery------------------------- */
+ @media (max-width: 1080px){
+    .section-bottom{
+        grid-template-columns: 1fr 1fr 1fr;
+       /*  background-color: salmon; */
+    }
+ }
+ @media (max-width: 768px){
+    .section-bottom{
+        grid-template-columns: 1fr 1fr;
+       /*  background-color: salmon; */
+    }
+    article{
+        width: 100%;
+        margin: 0 auto;
+       /*  background-color: fuchsia; */
+    }
+ }
+ @media (max-width: 480px){
+    .container-worck .container-icon .icon-left {
+        padding: 0;
+        border:  none;
+ /*        background-color: firebrick; */
+    }
+    .container-worck .container-icon .icon-left a{
+        padding: 9px;
+    }
+    .icon-rigth{
+        display: none;
+    }
+ }
