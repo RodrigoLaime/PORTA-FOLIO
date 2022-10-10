@@ -17,7 +17,7 @@ body{
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
     color: white;
-    background-color: var(--limon);
+    background-color: #00E0C7;
     position: relative;
 }
 /* Navegacion---------------------------- */
@@ -25,7 +25,7 @@ header{
     width: 100%;
     height: 50px;
     padding: 0 20px;
-    background-color:#0c443a63;
+    background-color:#289c8f85;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -57,7 +57,7 @@ nav a:hover{
 /* Main-------------------------------------- */
 main {
     width: 100%;
-    background-color: var(--limon);
+    /* background-color: #018ABE; */
 }
 article{
     width: 90%;
@@ -152,7 +152,7 @@ article{
 }
 .container-worck .container-icon .icon-left{
   /*   background-color: forestgreen; */
-    padding: 10px;
+    padding: 7px;
     border-right: 2px solid;
 }
 .container-worck .container-icon .icon-left a{
@@ -162,17 +162,24 @@ article{
     border-radius: 50%;
     background-color:  rgb(56, 56, 56);
 }
-.container-worck .container-icon .icon-rigth{
-    border-radius: 50%;
+.container-worck .container-icon .icon-left button{
+    font-size: 1.3rem;
+    color: white;
     padding: 10px;
-    margin-left: 8px;
+    border-radius: 50%;
     background-color:  rgb(56, 56, 56);
 }
+.container-worck .container-icon .icon-rigth{
+    /* border-radius: 50%;
+    padding: 10px; */
+    margin: auto 7px;
+}
 .container-worck .container-icon .icon-rigth a{
-    /* border-radius: 50%; */
-    /* padding: 10px; */
+    border-radius: 50%;
+    padding: 10px;
     color: white;
     font-size: 1.3rem;
+    background-color:  rgb(56, 56, 56);
 }
 
 /* .container-worck div{

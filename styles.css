@@ -1,11 +1,11 @@
 :root {
   --verde: #0c443a;
-  --limon: #25d1b2;
+  --limon: #01D9D8;
   --degradado: linear-gradient(90deg, var(--limon), var(--verde));
 }
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -22,7 +22,8 @@
 } */
 html {
   font-size: 62.5%;
-  overflow: hidden;
+  overflow-x: hidden;
+  
   /* para no tener ningun problema ABERIGUAR */
 }
 
@@ -34,27 +35,35 @@ body {
 header {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to top,
-      #0c443a 0%,
-      #0c443a 50%,
-      #25d1b2 50%,
-      #25d1b2 100%);
+  background: linear-gradient(
+    to top,
+    #192136 0%,
+    #192136 50%,
+    #1F2942 50%,
+    #1F2942 100%
+  );
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
+  
 }
-
-header .logo {
-  font-size: 6rem;
-  color: var(--verde);
-  font-weight: bolder;
-  height: 60%;
+header .logo{
+  background-image: linear-gradient(330deg, #324359
+   50%, #01D9D8 70%);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  transition: 1s;
+  font-size: 5rem;
 }
-
-header .logo span {
-  color: var(--limon);
+header .logo:hover{
+  background-image: linear-gradient(150deg, #324359
+   50%, #01D9D8 70%);
 }
 
 .frontend {
@@ -67,19 +76,30 @@ header .logo span {
 
 .front-left {
   width: 50%;
-  height: 4px;
-  background-color: var(--verde);
+  height: 3px;
+  background-color: #fff;
+  border-style: double; border-width: 4px; 
 }
 
 .front-rigth {
   width: 50%;
-  text-align: center;
-  font-size: 1.8rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
   font-weight: bold;
+  border-color: var(--limon);
+
+  border-style: double; border-width: 4px; 
+   
+ /*  border-bottom: 3px solid var(--limon);
+  border-left: 3px solid var(--limon); */
 }
 
 .front-rigth a {
-  color: var(--verde);
+  color: #fff;
+  font-family: 'Roboto Slab', serif;
 }
 
 .container-icon {
@@ -92,7 +112,8 @@ header .logo span {
 .icon-bacio {
   background-color: var(--limon);
   width: 50%;
-  height: 4px;
+  height: 3px;
+  border-style: double; border-width: 4px; 
 }
 
 .icon {
@@ -101,10 +122,14 @@ header .logo span {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-color:  #fff;
+  border-style: double; border-width: 4px; 
+ /*  border-top: 3px solid #fff;
+  border-left: 3px solid #fff; */
 }
 
 .icon a {
-  font-size: 2rem;
+  font-size: 1.8rem;
   width: 30px;
   height: 30px;
   color: var(--limon);
@@ -114,7 +139,7 @@ header .logo span {
   justify-content: center;
   align-items: center;
   margin-left: 10px;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .icon a:hover {
@@ -130,16 +155,17 @@ header .logo span {
 
 .exit {
   font-size: 1.8rem;
-  color: rgba(255, 255, 255, 0.90);
+  color: rgba(255, 255, 255, 0.9);
   width: 30px;
   height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--verde);
+  background-color: #324359;
   border-radius: 50%;
   margin-left: 10px;
-  border: 3px solid var(--limon);
+  border-color: var(--limon);
+  border-style: double; border-width: 5px; 
 }
 
 .exit:hover {
@@ -161,37 +187,37 @@ header .logo span {
 #menu li {
   margin: 8px 0;
   position: relative;
-  background-color: #2b2b2b9f;
+  background-color: #324359;
   border-radius: 5px;
   overflow: hidden;
   text-align: center;
 }
 
 #menu li::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
   width: 5px;
   background-color: #f0f;
-  transition: .4s all ease-in-out;
+  transition: 0.4s all ease-in-out;
 }
 
 #menu li:nth-child(1)::before {
-  background-color: var(--verde);
+  background-color: var(--limon);
 }
 
 #menu li:nth-child(2)::before {
-  background-color: var(--verde);
+  background-color: var(--limon);
 }
 
 #menu li:nth-child(3)::before {
-  background-color: var(--verde);
+  background-color: var(--limon);
 }
 
 #menu li:nth-child(4)::before {
-  background-color: var(--verde);
+  background-color: var(--limon);
 }
 
 #menu li:nth-child(5)::before {
@@ -224,7 +250,6 @@ header .logo span {
   font-weight: 500;
   position: relative;
   z-index: 1;
-
 }
 
 nav {
@@ -233,7 +258,6 @@ nav {
   padding-left: 10px;
   top: 0;
   left: 0;
-  /* width: 220px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -248,22 +272,22 @@ nav {
   padding-top: 5px; */
   width: 30px;
   height: 30px;
-  background-color: var(--verde);
+  background-color: #324359;
   /* font-size: 2.5rem; */
   font-size: 1.8rem;
-  color: rgba(255, 255, 255, 0.80);
+  color: rgba(255, 255, 255, 0.8);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3px solid var(--limon);
+  border-color: var(--limon);
+  border-style: double; border-width: 4px; 
 }
 
 .barra:hover {
   color: var(--limon);
   cursor: pointer;
 }
-
 
 .active {
   display: none;
@@ -272,7 +296,6 @@ nav {
 main {
   background-color: red;
   width: 100vw;
-  height: 900px;
 }
 
 #po {
@@ -281,3 +304,43 @@ main {
 
 /* MAINIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
  */
+
+ @media (min-width: 480px){
+  header .logo{
+    font-size: 6rem;
+  }
+  .front-left {
+    width: 70%;
+    height: 4px;
+  }
+  .front-rigth {
+    width: 30%;
+    font-size: 1.8rem;
+    /* border-style: double; border-width: 4px solid var(--limon); */ 
+   /*  border-bottom: 4px solid var(--limon);
+    border-left: 4px solid var(--limon); */
+  }
+  .icon-bacio {
+    height: 4px;
+    width: 70%;
+  }
+  
+  .icon {
+    width: 30%;
+   /*  border-top: 4px solid #fff;
+    border-left: 4px solid #fff; */
+  }
+  .icon a {
+    font-size: 2rem;
+  }
+ 
+ }
+@media (min-width: 768px){
+  header .logo{
+    font-size: 11rem;
+  }
+   .barra {
+    padding: 20px;
+    border-style: double; border-width: 6px;
+  }
+}
