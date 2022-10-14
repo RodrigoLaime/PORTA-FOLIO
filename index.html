@@ -2,78 +2,65 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PORTAFOLIO</title>
-  <link rel="stylesheet" href="./styles.css" />
-  <script src="./js/all.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-  <header>
-    <nav class="navbar">
-      <a class="barra" id="barra"><i class="fa-solid fa-caret-right"></i></a>
-      <div class="invicible active" id="menu-float">
-        <section class="section">
-          <ul id="menu">
-            <li><a href="">Home</a></li>
-            <li><a href="./About/About.html">About</a></li>
-            <li><a href="./worcks/worck.html">Worcks</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Education</a></li>
-            <li><a href="">Proyects</a></li>
-            <li><a href="">Details</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-          <a href="" class="exit"><i class="fa-solid fa-caret-left"></i></a>
-        </section>
-      </div>
-    </nav>
-    <section class="frontend">
-      <div class="front-rigth">
-        <a href="">F R O N T E N D</a>
-      </div>
-      <div class="front-left"></div>
-    </section>
-    <section>
-      <div>
-        <h1 class="logo">P O R T A<br>- F O L I O</h1>
-      </div>
-    </section>
-    <section class="container-icon">
-      <div class="icon-bacio"></div>
-      <div class="icon">
-        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-        <a href=""><i class="fa-brands fa-twitter"></i></a>
-        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-        <a href=""><i class="fa-brands fa-github"></i></a>
-      </div>
-    </section>
-  </header>
   <main>
-    <section class="main-one">
-      <div></div>
+    <div class="menu-vertical" id="menu-vertical">
+      <div class="menu" id="menu"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+      <div class="exit inactive" id="exit"><i class="fa-solid fa-xmark"></i></div>
+      <nav class="menu-flotante inactive" id="menu-flotante">
+        <a href="./About/About.html">About me</a>
+        <a href="./worcks/worck.html">Worcks</a>
+        <a href="">Blog</a>
+        <a href="">Education</a>
+        <a href="">Contact</a>
+      </nav>
+    </div>
+    <div class="icon-horizontal">
+      <div class="line2"></div>
+      <div class="icon-centro">
+        <a href=""><i class="fa-regular fa-circle-user"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+    <!-- <div class="container-header"> -->
+    <section class="section-movil">
+      <div class="line"></div>
+      <p class="p-love">Love Frontend</p>
+      <h3>Design <span>Technology.</span></h3>
+      <h1>PORTAFOLIO</h1>
+      <div class="text-icon">
+        <a class="p-about">About</a>
+        <div class="p-icon">
+          <div class="line"></div><i class="fa-regular fa-circle-dot"></i>
+        </div>
+      </div>
+      <div class="line"></div>
     </section>
-    <section class="main-two"></section>
-    <section class="main-three"></section>
+    <section class="section-descktop">
+      <div class="contain-descktop">
+        <h2 class="h2-1">Frontend</h2>
+        <h2 class="h2-2">Modern</h2>
+        <h2 class="h2-3">2022</h2>
+        <p class="line"></p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat expedita quasi sunt? Consectetur error qui
+          in molestiae illo reiciendis. Veniam, inventore cumque accusamus magnam odio tempora adipisci. Placeat,
+          suscipit et?</p>
+      </div>
+    </section>
+    <!--   </div> -->
   </main>
-  <footer></footer>
   <script src="./main.js"></script>
 </body>
-<!-- 1. Resumen de pedido
-https://github.com/CanteraSoftware/Componente-de-resumen-de-pedido
-2. Tarjeta de vista previa del producto
-https://github.com/CanteraSoftware/Componente-de-tarjeta-de-vista-previa-del-producto
-3. Tarjeta de vista previa de estadísticas
-https://github.com/CanteraSoftware/Componente-de-tarjeta-de-vista-previa-de-estad-sticas
-4. Tarjeta de vista previa de 3 columna
-https://github.com/CanteraSoftware/Componente-de-tarjeta-de-vista-previa-de-3-columnas
-5. Vista inicio de Facebook
-https://github.com/CanteraSoftware/Componente-vista-inicio-Facebook
- -->
 
 </html>

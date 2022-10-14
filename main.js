@@ -1,13 +1,14 @@
+const menu = document.getElementById('menu');
+const exit = document.getElementById('exit');
+const menuFlotante = document.getElementById('menu-flotante');
 
-const menu = document.querySelector('.invicible');
-const barra = document.querySelector('.barra');
-const exit = document.querySelector('.exit')
-
-barra.addEventListener('click', () => {
-  menu.classList.remove('active');
-  barra.classList.add('active');
-})
+menu.addEventListener('click', () => {
+  menu.classList.add('inactive');
+  exit.classList.remove('inactive');
+  menuFlotante.classList.remove('inactive');
+});
 exit.addEventListener('click', () => {
-  barra.classList.remove('active');
-  menu.classList.add('active');
-})
+  menu.classList.remove('inactive');
+  exit.classList.add('inactive');
+  menuFlotante.classList.add('inactive');
+});
