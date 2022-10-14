@@ -304,11 +304,12 @@ article {
   header .nav_activo {
     display: block;
     display: flex;
+
   }
 
   header .nav_activo a {
     font-size: 2rem;
-    margin-left: 10px;
+    margin: 0 15px;
     color: white;
     text-align: center;
     text-decoration: none;
