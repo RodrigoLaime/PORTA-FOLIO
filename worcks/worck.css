@@ -29,7 +29,7 @@ header {
   width: 100%;
   height: 50px;
   padding: 0 20px;
-  background-color: #289c8f85;
+  background-color: rgba(68, 68, 68, 0.282);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -57,10 +57,12 @@ nav a {
   margin-left: 20px;
   color: white;
   text-decoration: none;
+  border-bottom: 1px solid white;
 }
 
 nav a:hover {
-  color: var(--limon);
+  color: var(--verde);
+  border-bottom: 1px solid var(--verde);
 }
 
 /* Main-------------------------------------- */
@@ -112,7 +114,7 @@ article {
 }
 
 .container-worck button {
-  background-color: rgb(56, 56, 56);
+  background-color: rgba(68, 68, 68, 0.282);
   border: none;
   padding: 5px 20px;
   font-size: 1rem;
@@ -181,7 +183,7 @@ article {
 
 .container-worck .container-icon .icon-left {
   /*   background-color: forestgreen; */
-  padding: 7px;
+  padding: 0 7px;
   border-right: 2px solid;
 }
 
@@ -190,7 +192,7 @@ article {
   color: white;
   padding: 10px;
   border-radius: 50%;
-  background-color: rgb(56, 56, 56);
+  background-color: rgba(68, 68, 68, 0.282);
 }
 
 .container-worck .container-icon .icon-left button {
@@ -198,7 +200,7 @@ article {
   color: white;
   padding: 10px;
   border-radius: 50%;
-  background-color: rgb(56, 56, 56);
+  background-color: rgba(68, 68, 68, 0.282);
 }
 
 .container-worck .container-icon .icon-rigth {
@@ -212,7 +214,7 @@ article {
   padding: 10px;
   color: white;
   font-size: 1.3rem;
-  background-color: rgb(56, 56, 56);
+  background-color: rgba(68, 68, 68, 0.282);
 }
 
 /* .container-worck div{
@@ -264,7 +266,8 @@ article {
   }
 
   nav a {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    margin-left: 10px;
   }
 }
 
@@ -283,6 +286,11 @@ article {
     display: none;
   }
 
+  header nav a {
+    margin-left: 10px;
+    font-size: 1.6rem;
+  }
+
   header {
     display: flex;
     justify-content: center;
@@ -297,32 +305,32 @@ article {
     color: white;
   }
 
-  nav {
+  /* nav {
     display: none;
-  }
+  } */
 
-  header .nav_activo {
+  /* header .nav_activo {
     display: block;
     display: flex;
 
-  }
+  } */
 
-  header .nav_activo a {
+  /*   header .nav_activo a {
     font-size: 2rem;
     margin: 0 15px;
     color: white;
     text-align: center;
     text-decoration: none;
-  }
-
+  } */
+  /* 
   header .nav_activo p {
     font-size: 1rem;
     text-decoration: none;
-  }
+  } */
 
-  header .nav_activo a:hover {
+  /*   header .nav_activo a:hover {
     color: var(--limon);
-  }
+  } */
 
   header h3 {
     display: none;
