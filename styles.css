@@ -24,60 +24,89 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(
+      135deg,
+      rgba(37, 52, 70, 1) 5%,
+      rgba(1, 217, 216, 1) 6%,
+      rgba(37, 52, 70, 1) 7%,
+      rgba(37, 52, 70, 1) 10%,
+      rgba(1, 217, 216, 1) 11%,
+      rgba(37, 52, 70, 1) 12%,
+      rgba(37, 52, 70, 1) 70%,
+      rgba(1, 217, 216, 1) 71%,
+      rgba(37, 52, 70, 1) 72%,
+      rgba(37, 52, 70, 1) 75%,
+      rgba(1, 217, 216, 1) 76%,
+      rgba(37, 52, 70, 1) 77%
+    );
 }
 
 /* menu-------------------- */
 
-/* .menu-flotante {}
- */
+.menu-flotante {
+  width: 85%;
+}
+
 .menu-flotante-nav {
   display: flex;
-  flex-direction: column;
+  /*  flex-direction: column; */
   padding: 10px;
-  background-color: #192136;
+  background: linear-gradient(
+    135deg,
+    rgba(25, 33, 54, 1) 14%,
+    #01d9d8 15%,
+    rgba(25, 33, 54, 1) 16%,
+    rgba(25, 33, 54, 1) 84%,
+    #01d9d8 85%,
+    rgba(25, 33, 54, 1) 86%
+  );
   box-shadow: 2px -2px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 2px -2px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px -2px 5px 0px rgba(0, 0, 0, 0.75);
 }
+.menu-flotante-nav div {
+  margin: 0 auto;
+  width: 100%;
+}
 
 .menu-vertical .menu-flotante-nav a {
   text-decoration: none;
-  color: gray;
+  color: white;
   /* border-left: 2px solid white; */
-  font-size: 1.4rem;
-  padding: 8px 20px;
-  margin: 2px 0;
+  font-size: 1.6rem;
+  width: 130px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  /*  padding: 8px 20px; */
+  /*   margin: 2px 0; */
   /*   
   border-radius: 5px;
   background: linear-gradient(0deg, transparent, #01D9D8); */
 }
 
 .menu-vertical .menu-flotante-nav a:hover {
-  color: #fff;
   background-color: rgba(220, 220, 220, 0.378);
   border-radius: 2px;
 }
-
 
 .menu-vertical {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  /*  background-color: #19212b;
-    box-shadow: 10px 0px 17px -1px rgba(0, 0, 0, 0.75) inset;
-    -webkit-box-shadow: 10px 0px 17px -1px rgba(0, 0, 0, 0.75) inset;
-    -moz-box-shadow: 10px 0px 17px -1px rgba(0, 0, 0, 0.75) inset */
-  ;
   display: flex;
   justify-content: flex-end;
-  padding: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
 }
 
 .menu-vertical .menu {
   color: #fff;
-  padding-right: 2px;
-  font-size: 1.6rem;
+  padding-right: 5px;
+  font-size: 2rem;
   cursor: pointer;
 }
 
@@ -85,7 +114,7 @@ main {
   color: #fff;
   /*  padding: 5px 10px; */
   padding-left: 20px;
-  font-size: 1.6rem;
+  font-size: 2rem;
   cursor: pointer;
 }
 
@@ -102,7 +131,7 @@ main {
 .icon-horizontal .line2 {
   width: 70%;
   height: 2px;
-  background: #01D9D8;
+  background: #01d9d8;
 }
 
 .icon-horizontal .icon-centro {
@@ -117,31 +146,14 @@ main {
   /*   position: relative; */
 }
 
-/* .icon-horizontal .icon-centro .img-stich {
-  width: 100%;
-  height: 300%;
-  position: absolute;
-  bottom: 40px;
-  left: 0;
-  background-image: url('./img/stich.gif');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
-
-/* .icon-horizontal .icon-centro .img-stich img {
-  width: 100%;
-  height: 100px;
-} */
-
 .icon-horizontal .icon-centro a {
   font-size: 1.6rem;
   padding: 0 5px;
-  color: gray;
+  color: white
 }
 
 .icon-horizontal .icon-centro a:hover {
-  color: #fff;
+  color: #01d9d8;
 }
 
 /* main-------------------------------------- */
@@ -149,7 +161,9 @@ h1 {
   font-size: 4.5rem;
   color: #253446;
   background: transparent;
-  text-shadow: 1px 1px 0 #01D9D8, 1px -1px 0 #01D9D8, -1px 1px 0 #01D9D8, -1px -1px 0 #01D9D8, 1px 0px 0 #01D9D8, 0px 1px 0 #01D9D8, -1px 0px 0 #01D9D8, 0px -1px 0 #01D9D8;
+  text-shadow: 1px 1px 0 #01d9d8, 1px -1px 0 #01d9d8, -1px 1px 0 #01d9d8,
+    -1px -1px 0 #01d9d8, 1px 0px 0 #01d9d8, 0px 1px 0 #01d9d8,
+    -1px 0px 0 #01d9d8, 0px -1px 0 #01d9d8;
   transition: 1s;
   position: relative;
   z-index: 1;
@@ -194,8 +208,7 @@ h1:hover::before {
   width: 40px;
   height: 2px;
   margin: 15px 0;
-  background-color: #01D9D8;
-  ;
+  background-color: #01d9d8;
 }
 
 .text-icon {
@@ -216,7 +229,7 @@ h1:hover::before {
 
 .p-icon i {
   font-size: 1.8rem;
-  color: #01D9D8;
+  color: #01d9d8;
 }
 
 .section-descktop {
@@ -225,6 +238,23 @@ h1:hover::before {
 
 /* Mediaquery */
 @media (min-width: 480px) {
+  main {
+    background: linear-gradient(
+      135deg,
+      rgba(37, 52, 70, 1) 5%,
+      rgba(1, 217, 216, 1) 6%,
+      rgba(37, 52, 70, 1) 7%,
+      rgba(37, 52, 70, 1) 10%,
+      rgba(1, 217, 216, 1) 11%,
+      rgba(37, 52, 70, 1) 12%,
+      rgba(37, 52, 70, 1) 70%,
+      rgba(1, 217, 216, 1) 71%,
+      rgba(37, 52, 70, 1) 72%,
+      rgba(37, 52, 70, 1) 75%,
+      rgba(1, 217, 216, 1) 76%,
+      rgba(37, 52, 70, 1) 77%
+    );
+  }
   h1 {
     font-size: 6rem;
   }
@@ -236,18 +266,28 @@ h1:hover::before {
   .section-movil h3 {
     font-size: 3rem;
   }
+
+  .menu-flotante-nav {
+    background: #192136;
+  }
+  .menu-flotante-nav div {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 
 @media (min-width: 600px) {
   h1 {
     font-size: 7rem;
   }
-
 }
 
 @media (min-width: 768px) {
   h1 {
     font-size: 7rem;
+  }
+  .menu-flotante {
+    width: auto;
   }
 
   .section-movil {
@@ -283,7 +323,7 @@ h1:hover::before {
   }
 
   .section-descktop .h2-3 {
-    color: #01D9D8;
+    color: #01d9d8;
   }
 
   .section-descktop p {
@@ -301,7 +341,6 @@ h1:hover::before {
     width: 70%;
     /*   background-color: red; */
   }
-
 }
 
 /* @media (min-width: 180px) {

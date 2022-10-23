@@ -1,75 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./styles.css">
-</head>
+  <body>
+    <main>
+      <div class="menu-vertical" id="menu-vertical">
+        <div class="menu" id="menu">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+        <div class="menu-flotante inactive" id="menu-flotante">
+          <nav class="menu-flotante-nav" id="menu-flotante-nav">
+            <div>
+              <a href="./About/About.html">About me </a>
+              <a href="./worcks/worck.html">Worcks</a>
+              <a href="">Education</a>
+              <a href="">Contact</a>
+            </div>
+          </nav>
+        </div>
+        <div class="exit inactive" id="exit">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
 
-<body>
-  <main>
-    <div class="menu-vertical" id="menu-vertical">
-      <div class="menu" id="menu"><i class="fa-solid fa-ellipsis-vertical"></i></div>
-      <div class="menu-flotante inactive" id="menu-flotante">
-        <nav class="menu-flotante-nav" id="menu-flotante-nav">
-          <a href="./About/About.html">About me</a>
-          <a href="./worcks/worck.html">Worcks</a>
-          <a href="">Blog</a>
-          <a href="">Education</a>
-          <a href="">Contact</a>
-        </nav>
-      </div>
-      <div class="exit inactive" id="exit"><i class="fa-solid fa-xmark"></i></div>
-
-      <!--  <div class="text-flotante">
+        <!--  <div class="text-flotante">
         <p>HELLO</p>
       </div> -->
-    </div>
-    <div class="icon-horizontal">
-      <div class="line2"></div>
-      <div class="icon-centro">
-        <!-- <div class="img-stich">
+      </div>
+      <div class="icon-horizontal">
+        <div class="line2"></div>
+        <div class="icon-centro">
+          <!-- <div class="img-stich">
             <img src="./img/stich.gif" alt="">
         </div> -->
-        <a href=""><i class="fa-regular fa-circle-user"></i></a>
-        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href=""><i class="fa-brands fa-facebook"></i></a>
-      </div>
-    </div>
-    <!-- <div class="container-header"> -->
-    <section class="section-movil">
-      <div class="line"></div>
-      <p class="p-love">Love Frontend</p>
-      <h3>Design <span>Technology.</span></h3>
-      <h1>PORTAFOLIO</h1>
-      <div class="text-icon">
-        <a class="p-about">About</a>
-        <div class="p-icon">
-          <div class="line"></div><i class="fa-regular fa-circle-dot"></i>
+          <a href=""><i class="fa-regular fa-circle-user"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
         </div>
       </div>
-      <div class="line"></div>
-    </section>
-    <section class="section-descktop">
-      <div class="contain-descktop">
-        <h2 class="h2-1">Frontend</h2>
-        <h2 class="h2-2">Modern</h2>
-        <h2 class="h2-3">2022</h2>
-        <p class="line"></p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat expedita quasi sunt? Consectetur error qui
-          in molestiae illo reiciendis. Veniam, inventore cumque accusamus magnam odio tempora adipisci. Placeat,
-          suscipit et?</p>
-      </div>
-    </section>
-    <!--   </div> -->
-  </main>
-  <script src="./main.js"></script>
-</body>
-
+      <!-- <div class="container-header"> -->
+      <section class="section-movil">
+        <div class="line"></div>
+        <p class="p-love">Love Frontend</p>
+        <h3>Design <span>Technology.</span></h3>
+        <h1>PORTAFOLIO</h1>
+        <div class="text-icon">
+          <a class="p-about">About</a>
+          <div class="p-icon">
+            <div class="line"></div>
+            <i class="fa-regular fa-circle-dot"></i>
+          </div>
+        </div>
+        <div class="line"></div>
+      </section>
+      <section class="section-descktop">
+        <div class="contain-descktop">
+          <h2 class="h2-1">Frontend</h2>
+          <h2 class="h2-2">Modern</h2>
+          <h2 class="h2-3">2022</h2>
+          <p class="line"></p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
+            expedita quasi sunt? Consectetur error qui in molestiae illo
+            reiciendis. Veniam, inventore cumque accusamus magnam odio tempora
+            adipisci. Placeat, suscipit et?
+          </p>
+        </div>
+      </section>
+      <!--   </div> -->
+    </main>
+    <script src="./main.js"></script>
+  </body>
 </html>
