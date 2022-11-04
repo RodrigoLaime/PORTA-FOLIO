@@ -41,6 +41,7 @@ header {
 header .nav_activo {
   display: none;
 }
+
 /* header .nav_activo a{
   width: 70px;
 } */
@@ -182,7 +183,6 @@ article {
 }
 
 .container-worck .container-icon {
-  /*   background-color: firebrick; */
   display: flex;
   justify-content: center;
   width: 100%;
@@ -191,7 +191,6 @@ article {
 }
 
 .container-worck .container-icon .icon-left {
-  /*   background-color: forestgreen; */
   padding: 0 7px;
   border-right: 2px solid;
 }
@@ -213,8 +212,6 @@ article {
 }
 
 .container-worck .container-icon .icon-rigth {
-  /* border-radius: 50%;
-    padding: 10px; */
   margin: auto 7px;
 }
 
@@ -295,7 +292,7 @@ article {
     display: none;
   }
 
-  nav{
+  nav {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
