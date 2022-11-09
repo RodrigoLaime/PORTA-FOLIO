@@ -1,84 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/home.css" />
+    <!-- fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./CSS/styles.css" />
-</head>
-
-<body>
-  <main>
-    <div class="menu-vertical" id="menu-vertical">
-      <div class="menu" id="menu">
-        <i class="fa-solid fa-ellipsis-vertical"></i>
-      </div>
-      <div class="menu-flotante inactive" id="menu-flotante">
-        <nav class="menu-flotante-nav" id="menu-flotante-nav">
-          <div>
-            <a href="./html/About.html">About me </a>
-            <a href="./html/worck.html">Worcks</a>
-            <a href="">Education</a>
-            <a href="">Contact</a>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- cdn font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main id="main">
+      <nav id="nav">
+        <div class="logo-desktop">
+          <div class="img"><i class="fa-regular fa-registered"></i>
           </div>
-        </nav>
-      </div>
-      <div class="exit inactive" id="exit">
-        <i class="fa-solid fa-xmark"></i>
-      </div>
-
-      <!--  <div class="text-flotante">
-        <p>HELLO</p>
-      </div> -->
-    </div>
-    <div class="icon-horizontal">
-      <div class="line2"></div>
-      <div class="icon-centro">
-        <!-- <div class="img-stich">
-            <img src="./img/stich.gif" alt="">
-        </div> -->
-        <a href=""><i class="fa-regular fa-circle-user"></i></a>
-        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href=""><i class="fa-brands fa-facebook"></i></a>
-      </div>
-    </div>
-    <!-- <div class="container-header"> -->
-    <section class="section-movil">
-      <div class="line"></div>
-      <p class="p-love">Love Frontend</p>
-      <h3>Design <span>Technology.</span></h3>
-      <h1>PORTAFOLIO</h1>
-      <div class="text-icon">
-        <a class="p-about">About</a>
-        <div class="p-icon">
-          <div class="line"></div>
-          <i class="fa-regular fa-circle-dot"></i>
+          <h3>oyal Design</h3>
         </div>
-      </div>
-      <div class="line"></div>
-    </section>
-    <section class="section-descktop">
-      <div class="contain-descktop">
-        <h2 class="h2-1">Frontend</h2>
-        <h2 class="h2-2">Modern</h2>
-        <h2 class="h2-3">2022</h2>
-        <p class="line"></p>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
-          expedita quasi sunt? Consectetur error qui in molestiae illo
-          reiciendis. Veniam, inventore cumque accusamus magnam odio tempora
-          adipisci. Placeat, suscipit et?
-        </p>
-      </div>
-    </section>
-    <!--   </div> -->
-  </main>
-  <script src="./js/main.js"></script>
-</body>
-
+        <div class="menu-movil-container">
+          <p class="menu-icon" id="menu-icon"><i class="fa-solid fa-bars-staggered"></i></p>
+        <div class="menu-movil active" id="menu-movil">
+          <div>
+            <div class="logo">
+              <div class="img"><i class="fa-regular fa-registered"></i>
+              </div>
+              <h3>oyal Design</h3>
+            </div>
+            <p><a class="current-movil" href="#">Home</a></p>
+            <p class="p"></p>
+            <p><a href="./html/About.html">About me</a></p>
+            <p class="p"></p>
+            <p><a href="./html/worck.html">Jobs</a></p>
+            <p class="p"></p>
+            <p><a href="">Contact</a></p>
+          </div>
+        </div>
+        </div>
+        <div class="menu-desktop">
+          <div>
+            <p><a class="current" href="#">Home</a></p>
+            <p><a href="./html/About.html">About me</a></p>
+            <p><a href="./html/worck.html">Jobs</a></p>
+            <p><a href="">Contact</a></p>
+          </div>
+        </div>
+      </nav>
+      <aside>
+        <a href="">Contact</a>
+        <div class="icon">
+          <a href=""><i class="fa-regular fa-circle-user"></i></a>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </aside>
+      <section class="container-desactived" id="container-desactived">
+        <section class="container">
+          <p class="p1">Love on UI & UX</p>
+          <div class="title">
+            <h1>PORTFOLIO</h1>
+            <h1>01</h1>
+          </div>
+          <div class="line"></div>
+          <div class="text_top">
+            <p class="p2">
+              Desing technology. <br />
+              The art of design.
+            </p>
+            <p class="p3">front-end developer <br />& back-end</p>
+            <div class="text-bottom">
+              <p class="p4">
+                I am Laime<br />
+                Rodrigo
+              </p>
+              <div class="button">
+                <button><a href="">Contact</a></button>
+                <button><a href="">Jobs</a></button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="./js/home.js"></script>
+  </body>
 </html>
