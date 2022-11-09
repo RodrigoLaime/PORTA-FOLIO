@@ -92,6 +92,9 @@ nav .menu-icon {
   color: #6a6a6a;
   margin-right: 2px;
 }
+.menu-movil div p{
+  padding: 8px 0;
+}
 .menu-movil div p a {
   color: white;
   text-decoration: none;

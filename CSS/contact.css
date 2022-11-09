@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+  /*    #253446 */
+}
+body {
+  font-family: "Roboto Flex", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background-color: #3a4541;
+  color: white;
+}
+.active {
+  display: none;
+}
+main {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, #0e1217, #1d262e);
+  position: relative;
+}
+.menu-container-movil {
+  display: none;
+}
+.container-centro {
+  width: 100%;
+  height: 100%;
+}
+.text {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text h3 {
+  font-size: 4rem;
+  color: #a024e8;
+}
+.text p {
+  font-size: 1.6rem;
+  margin-top: 20px;
+}
+.text .redes p {
+  width: 100px;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 100px;
+}
+.text .redes .face {
+  background: #4267b2;
+}
+.text .redes .twit {
+  background-color: #1da1f2;
+}
+.text .redes .yout {
+  background-color: #ff0000;
+}
+.text .redes p a {
+  font-size: 1.4rem;
+  color: white;
+  text-decoration: none;
+}
+.formulario {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formulario form {
+  width: 100%;
+  min-width: 270px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.formulario form label {
+  font-size: 1.6rem;
+  padding: 8px 5px;
+}
+.formulario form input {
+  border: 1px solid lightgrey;
+  background-color: transparent;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px 5px;
+  color: white;
+}
+.formulario form button {
+  margin-top: 30px;
+  border: none;
+  background-color: #a024e8;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px 5px;
+  color: white;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++ */
+@media (min-width: 575px) {
+    .container-centro {
+        display: flex;
+  }
+  .text {
+    width: 50%;
+    height: 100%;
+  }
+  .formulario {
+      width: 50%;
+      height: 100%;
+      padding-right: 10px;
+    }
+}
+@media (min-width: 1024px) {
+    .container-centro {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
