@@ -30,19 +30,31 @@
     />
   </head>
   <body>
-    <main>
-      <nav>
-        <p class="active"><i class="fa-solid fa-bars-staggered"></i></p>
-        <div class="active">
+    <main id="main">
+      <nav id="nav">
+        <div class="logo-desktop">
+          <div class="img"><i class="fa-regular fa-registered"></i>
+          </div>
+          <h3>oyal Design</h3>
+        </div>
+        <div class="menu-movil-container">
+          <p class="menu-icon" id="menu-icon"><i class="fa-solid fa-bars-staggered"></i></p>
+        <div class="menu-movil active" id="menu-movil">
           <div>
-            <p><a href="">Home</a></p>
-            <p></p>
+            <div class="logo">
+              <div class="img"><i class="fa-regular fa-registered"></i>
+              </div>
+              <h3>oyal Design</h3>
+            </div>
+            <p><a class="current-movil" href="">Home</a></p>
+            <p class="p"></p>
             <p><a href="">About me</a></p>
-            <p></p>
+            <p class="p"></p>
             <p><a href="">Jobs</a></p>
-            <p></p>
+            <p class="p"></p>
             <p><a href="">Contact</a></p>
           </div>
+        </div>
         </div>
         <div class="menu-desktop">
           <div>
@@ -61,27 +73,34 @@
           <a href=""><i class="fa-brands fa-linkedin"></i></a>
         </div>
       </aside>
-      <section class="container">
-        <p class="p1">Love on UI & UX</p>
-        <div class="title">
-          <h1>PORTFOLIO</h1>
-          <h1>01</h1>
-        </div>
-        <div class="line"></div>
-        <div class="text_top">
-          <p class="p2">
-            Desing technology. <br />
-            The art of design.
-          </p>
-          <p class="p3">front-end developer <br />& back-end</p>
-          <div class="text-bottom">
-            <p class="p4">
-              I am Laime<br />
-              Rodrigo
-            </p>
+      <section class="container-desactived" id="container-desactived">
+        <section class="container">
+          <p class="p1">Love on UI & UX</p>
+          <div class="title">
+            <h1>PORTFOLIO</h1>
+            <h1>01</h1>
           </div>
-        </div>
+          <div class="line"></div>
+          <div class="text_top">
+            <p class="p2">
+              Desing technology. <br />
+              The art of design.
+            </p>
+            <p class="p3">front-end developer <br />& back-end</p>
+            <div class="text-bottom">
+              <p class="p4">
+                I am Laime<br />
+                Rodrigo
+              </p>
+              <div class="button">
+                <button><a href="">Contact</a></button>
+                <button><a href="">Jobs</a></button>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
     </main>
+    <script src="../js/perfil.js"></script>
   </body>
 </html>
