@@ -5,61 +5,165 @@
 }
 
 body {
-  background-color: darkslategray;
+  background-image: linear-gradient(to left, #0e1217, #1d262e);
   font-family: 'Roboto', sans-serif;
   color: white;
+  position: relative;
 }
 
 html {
   font-size: 62.5%;
 }
-
+.active{
+  display: none;
+  padding: 20px;
+}
 /* header */
+nav{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 15px;
+}
+.menu-movil-container .menu-icon {
+  font-size: 2rem;
+}
+.menu-movil{
+  background-color: red;
+  width: 180px;
+}
+.logo-desktop{
+  display: none;
+}
+.menu-desktop{
+  display: none;
+}
 /* main+++++++++++++++++++++++++++++++++++++ */
 main {
   width: 100%;
-  background-color: teal;
 }
 
 main .section-text {
   width: 100%;
   min-width: 270px;
-  max-width: 960px;
-  background-color: aqua;
+  max-width: 1140px;
   margin: 0 auto;
+  padding: 10px;
+}
+main .section-text h2{
+  font-size: 3rem;
+  padding: 10px 0;
+  border-bottom: 3px solid #01d9d8;
+  margin-top: 50px;
+}
+main .section-text p{
+  font-size: 1.8rem;
+  padding: 10px 0;
 }
 
 main .section-folder {
   width: 100%;
   min-width: 270;
-  max-width: 960px;
+  max-width: 1140px;
   display: grid;
   gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  background-color: rgb(91, 180, 180);
+  grid-template-columns: 1fr 1fr;
   padding: 10px;
   margin: 0 auto;
 }
 
 main .section-folder .folder {
-  padding: 10px;
-  border-top: 3px solid white;
+  padding: 20px;
+  border-top: 3px solid #01d9d8;
+  background-color: #0b141c;
+  border-radius: 2px;
 }
 
 .contact {
-  background-color: blue;
+  border-bottom: 2px solid #01d9d8;
   padding: 5px;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
   font-size: 1.4rem;
+}
+.contact:hover {
+  background-color: #01d9d8;
+  border-radius: 2px;
 }
 
 main .section-folder .folder h3 {
   font-size: 1.6rem;
-  margin: 10px 0;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 main .section-folder .folder h4 {
   font-size: 1.4rem;
+}
+main .section-folder .folder .container-icon{
+  margin-top: 10px;
+}
+main .section-folder .folder .container-icon a{
+  font-size: 1.6rem;
+  color: white;
+  margin-right: 10px;
+}
+
+/* mediaqueri++++++++++++++++++++++++++++++++++++++ */
+@media (min-width: 575px){
+  nav{
+    display: flex;
+    align-items: center;
+  }
+  .current{
+    background-color: #01d9d8;
+  }
+  main .section-text h2 {
+    margin-top: 100px;
+}
+  .menu-movil-container{
+    display: none;
+  }
+  .logo-desktop{
+    display: flex;
+    align-items: center;
+  }
+  .logo-desktop div{
+    font-size: 3rem;
+    margin-right: 2px;
+  }
+  .logo-desktop h3{
+    font-size: 1.8rem;
+  }
+  .menu-desktop{
+    display: block;
+    margin-left: auto;
+  }
+  .menu-desktop div{
+    display: flex;
+  }
+  .menu-desktop div p{
+    padding: 5px 10px;
+    border-bottom: 2px solid #01d9d8;
+    margin-left: 20px;
+  }
+  .menu-desktop div p:hover{
+    background-color: #01d9d8;
+  }
+  .menu-desktop div p a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 600px){
+  main .section-folder {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 868px){
+  main .section-folder {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
