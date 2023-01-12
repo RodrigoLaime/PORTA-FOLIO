@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../CSS/contact.css">
-    <!--  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,600&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <main>
-      <div class="menu-container-movil">
-        <nav>
-          <div class="logo-desktop">
-            <div class="img"><i class="fa-regular fa-registered"></i>
-            </div>
-            <h3>oyal Design</h3>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../CSS/contact.css">
+  <!--  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,600&display=swap"
+    rel="stylesheet">
+    <!-- font -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+  <main>
+    <div class="menu-container-movil">
+      <nav class="nav">
+        <div class="logo-desktop">
+          <div class="img"><i class="fa-regular fa-registered"></i>
           </div>
-          <div class="menu-movil-container">
-            <p class="menu-icon" id="menu-icon"><i class="fa-solid fa-bars-staggered"></i></p>
+          <h3>oyal Design</h3>
+        </div>
+        <!--  -->
+         <div class="menu-movil-container">
+          <p class="menu-icon" id="menu-icon"><i class="fa-solid fa-bars-staggered"></i></p>
           <div class="menu-movil active" id="menu-movil">
             <div>
               <div class="logo">
@@ -29,51 +41,68 @@
                 </div>
                 <h3>oyal Design</h3>
               </div>
-              <p><a class="current-movil" href="#">Home</a></p>
+              <p><a href="../index.html">Home</a></p>
               <p class="p"></p>
               <p><a href="./html/About.html">About me</a></p>
               <p class="p"></p>
               <p><a href="./html/worck.html">Jobs</a></p>
               <p class="p"></p>
-              <p><a href="">Contact</a></p>
+              <p><a class="current-movil" href="#">Contact</a></p>
             </div>
           </div>
+        </div>
+        <!--  -->
+        <div class="menu-desktop">
+          <div>
+            <p><a href="../index.html">Home</a></p>
+            <p><a href="../html//About.html">About me</a></p>
+            <p><a href="../html/trabajos.html">Jobs</a></p>
+            <p><a class="current" href="#">Contact</a></p>
           </div>
-          <div class="menu-desktop">
-            <div>
-              <p><a class="current" href="#">Home</a></p>
-              <p><a href="./html/About.html">About me</a></p>
-              <p><a href="./html/worck.html">Jobs</a></p>
-              <p><a href="./html/contact.html">Contact</a></p>
-            </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container-centro" id="container-centro">
+      <section class="text">
+        <div class="contac-text">
+          <h3>Let's talk</h3>
+          <p>ask us anything or just say hi</p>
+          <div class="redes">
+            <p class="tel"><a href="#">Tel: 0000000000</a></p>
+            <p class="email"><a href="#">Email: rodri@gmail.com</a></p>
           </div>
-        </nav>
-      </div>
-      <div class="container-centro">
-        <section class="text">
-            <h3>Welcome</h3>
-            <p>Fill in the field</p>
-            <p>social networks</p>
-            <div class="redes">
-                <p class="face"><a href="">Faceboock</a></p>
-                <p class="twit"><a href="">Twitter</a></p>
-                <p class="yout"><a href="">youtube</a></p>
-            </div>
-        </section>
-        <section class="formulario">
-          <form>
-              <label for="name">Name</label>
-              <input type="text" id="name" placeholder="Fulano tanto">
-              <label for="email">Email</label>
-              <input type="email" id="email" placeholder="fulano123@gmail.com">
-              <label for="number">Tel:</label>
-              <input type="number" id="number" placeholder="2654983652">
-              <label for="message">Mensage</label>
-              <input type="text" id="message" placeholder="Mensaje">
-              <button type="button">Eviar</button>
+        </div>
+      </section>
+      <section class="formulario">
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Name">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Email">
+          <label for="number">Tel:</label>
+          <input type="number" id="number" placeholder="0000">
+          <label for="message">Mensage</label>
+          <input type="text" id="message" placeholder="Mensaje">
+          <button type="button">Eviar</button>
+        </form>
+       
+        <form class="form-desktop"> 
+          <label for="name">Name
+            <input type="text" id="name" placeholder="Name"></label>
+          <label for="email">Email
+            <input type="email" id="email" placeholder="Email"></label>
+          <label for="number">Tel:
+            <input type="number" id="number" placeholder="0000"></label>
+          <label for="message">Mensage
+            <input type="text" id="message" placeholder="Mensaje"></label>
           </form>
+          <button type="button">Eviar</button>
+
         <!-- </section> -->
-      </div>
-    </main>
-  </body>
+    </div>
+  </main>
+
+  <script src="../js/conatct.js"></script>
+</body>
+
 </html>

@@ -3,138 +3,282 @@
   padding: 0;
   margin: 0;
 }
+
 html {
   font-size: 62.5%;
-  /*    #253446 */
+  background: linear-gradient(to left, #0e1217, #1d262e);
 }
+
 body {
+  width: 100%;
   font-family: "Roboto Flex", sans-serif;
-  width: 100vw;
-  height: 100vh;
-  background-color: #3a4541;
-  color: white;
 }
 
 .active {
   display: none;
 }
-main {
+/* menu */
+nav {
   width: 100%;
-  height: 100%;
-  background: linear-gradient(to left, #0e1217, #1d262e);
-  position: relative;
-}
-.menu-container-movil {
+  padding: 15px 20px;
   position: absolute;
   top: 0;
   left: 0;
+}
+nav .menu-icon {
+  font-size: 2rem;
+  color: white;
+}
+.menu-movil {
+  width: 180px;
+  height: 100vh;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #0e1217;
+  z-index: 1;
+  text-align: center;
+}
+.menu-movil div h3 {
+  font-size: 1.8rem;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.menu-movil div .logo {
+  display: flex;
+  margin-bottom: 30px;
+}
+.menu-movil div .img {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #6a6a6a;
+  margin-right: 2px;
+}
+.menu-movil div p {
+  padding: 8px 0;
+}
+.menu-movil div p a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+.menu-movil div p a:hover {
+  color: #182d47;
+}
+.menu-movil div .current-movil {
+  color: #182d47;
+}
+.menu-movil div .p {
+  width: 2px;
+  background-color: #182d47;
+  height: 4rem;
+  margin: 0 auto;
+}
+.logo-desktop {
   display: none;
 }
+.menu-desktop {
+  width: 100%;
+  display: none;
+}
+.menu-desktop div {
+  display: flex;
+  justify-content: flex-end;
+}
+.menu-desktop div a {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 1.8rem;
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 5px 10px;
+  border-radius: 2px;
+  border-bottom: 2px solid #182d47;
+}
+.menu-desktop div a:hover {
+  background-color: #182d47;
+}
+.current {
+  background-color: #182d47;
+}
+
+/* center */
+
 .container-centro {
+  padding-top: 6rem;
   width: 100%;
   height: 100%;
 }
+
 .text {
+  padding: 10px;
+  color: white;
   width: 100%;
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  max-width: 380px;
+  min-width: 300px;
+  margin: auto;
 }
-.text h3 {
-  font-size: 4rem;
+.contac-text {
+  border-right: 4px solid #182d47;
+  border-bottom:4px solid #182d47;
+}
+.contac-text h3 {
+  background-color:#182d47;
+  font-size: 3rem;
+  padding: 5px 10px;
   color: #a024e8;
 }
-.text p {
-  font-size: 1.6rem;
-  margin-top: 20px;
-}
-.text .redes p {
-  width: 100px;
-  text-align: center;
+.contac-text p {
+  font-size: 3rem;
   padding: 5px 10px;
-  border-radius: 5px;
 }
-.text .redes .face {
-  background: #4267b2;
-}
-.text .redes .twit {
-  background-color: #1da1f2;
-}
-.text .redes .yout {
-  background-color: #ff0000;
-}
-.text .redes p a {
+.text .contac-text .redes p a {
   font-size: 1.4rem;
   color: white;
   text-decoration: none;
 }
+
 .formulario {
   width: 100%;
-  height: 50%;
-  display: block;
+  text-align: center;
 }
 .formulario form {
   width: 100%;
-  min-width: 270px;
-  max-width: 300px;
+  max-width: 380px;
+  min-width: 300px;
+  height: 40rem;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 0 10px;
 }
 .formulario form label {
+  width: 100%;
+  text-align: left;
+  color: #145eb8;
+  font-weight: 600;
+  padding: 6px 5px;
+  margin-top: 10px;
   font-size: 1.6rem;
-  padding: 8px 5px;
+  background-color: #182d47;
 }
 .formulario form input {
-  border: 1px solid lightgrey;
-  background-color: transparent;
-  outline: none;
-  border-radius: 5px;
+  width: 100%;
   padding: 10px 5px;
+  background-color: transparent;
+  border-style: none;
+  outline: none;
+  font-size: 1.4rem;
+  border-bottom: 3px solid #182d47;
   color: white;
 }
-.formulario form button {
-  margin-top: 30px;
-  border: none;
-  background-color: #a024e8;
-  outline: none;
-  border-radius: 5px;
-  padding: 10px 5px;
+.formulario form input::placeholder {
   color: white;
 }
 
-/* ++++++++++++++++++++++++++++++++++++++ */
+.formulario form button {
+  background-color: #182d47;
+  color: white;
+  font-size: 1.6rem;
+  border-style: none;
+  width: 100%;
+  height: 4rem;
+  margin-top: 15px;
+  border-radius: 2px;
+}
+
+/* mediaquery */
+@media (min-width: 375px) {
+}
+@media (min-width: 480px) {
+}
 @media (min-width: 575px) {
-    .container-centro {
-        display: flex;
+  .menu-desktop {
+    display: flex;
+    width: auto;
+    margin-left: auto;
+    align-items: center;
   }
+  .menu-movil-container {
+    display: none;
+  }
+  nav {
+    padding: 20px;
+    display: flex;
+  }
+  .logo-desktop {
+    display: flex;
+  }
+  .logo-desktop .img {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #6a6a6a;
+    margin-right: 2px;
+  }
+  .logo-desktop h3 {
+    font-size: 1.8rem;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+
+  .container-centro {
+    padding-top: 10rem;
+  }
+
   .text {
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    max-width: 575px;
+    min-width: 300px;
   }
-  .formulario {
-      width: 50%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-}
-@media (min-width: 768px) {
-    .container-centro .text .redes{
-        display: flex;
-    }
-    .text p {
-        font-size: 1.6rem;
-        margin-left: 10px;
-        margin-top: 40px;
-      }
-}
-@media (min-width: 1024px) {
-    .container-centro {
-        width: 80%;
-        margin: 0 auto;
-    }
+
+  .formulario form{
+    display: none;
+  }
+  
+  .formulario .form-desktop{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    gap: 10px;
+    width: 100%;
+    max-width: 575px;
+    min-width: 300px;
+  }
+  .formulario .form-desktop label {
+    background-color: #182d47;
+    padding: 8px 4px;
+  }
+  .formulario .form-desktop label input{
+    background: linear-gradient(to left, #0e1217, #1d262e);
+    border: none;
+    padding: 10px 5px;
+  }
+  .formulario button {
+    width: 100%;
+    max-width: 360px;
+    min-width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #182d47;
+    color: white;
+    font-size: 1.6rem;
+    border-style: none;
+    width: 100%;
+    height: 4rem;
+    margin-top: 15px;
+    border-radius: 2px;
+  }
 }
