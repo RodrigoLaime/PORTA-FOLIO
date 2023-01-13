@@ -17,6 +17,7 @@ body {
  /*  height: 100vh; */
   font-family: "Roboto Flex", sans-serif;
   color: white;
+  overflow-x: hidden;
 }
 
 .active {
@@ -130,20 +131,11 @@ nav .menu-icon {
 
 /* MAIN CONTAINER */
 .container-about {
-  /* background-color: darkcyan; */
   width: 100%;
   max-width: 400rem;
   min-width: 30rem;
-  padding: 10px;
+  padding: 20px;
   padding-top: 6rem;
-}
-/* conatiner left */
-.container-about .about-left {
-  /*   background-color: hotpink; */
-}
-
-.about-who-am-i {
-  /* background-color: saddlebrown; */
 }
 .about-who-am-i h3 {
   padding: 5px 0;
@@ -156,9 +148,6 @@ nav .menu-icon {
   border-radius: 3px;
 }
 
-.about-what-i-do {
-  /* background-color: saddlebrown; */
-}
 .about-what-i-do h3 {
   font-size: 2rem;
   padding: 5px 0;
@@ -171,12 +160,6 @@ nav .menu-icon {
 }
 
 /* conatiner right */
-.container-about .about-right {
-  /*  background-color: firebrick; */
-}
-.about-language {
-  /*  background-color: sandybrown; */
-}
 .about-language h3 {
   padding: 5px 0;
   font-size: 2rem;
@@ -207,10 +190,6 @@ nav .menu-icon {
   background-color: rgba(255, 255, 255, 0.171);
   border-radius: 3px;
   margin-top: 5px;
-}
-
-.about-education {
-/*   background-color: darkcyan; */
 }
 
 .about-education h3{
@@ -252,56 +231,57 @@ nav .menu-icon {
 }
 /* Footer */
 footer {
-  width: 100%;
-  max-width: 400rem;
-  min-width: 30rem;
   padding: 10px;
+  width: 100vw;
+  height: 18rem;
 }
 footer h3{
   font-size: 2rem;
   text-align: center;
 }
 footer .skills {
-  background-color: rgba(255, 255, 255, 0.171);
   width: 100%;
-  max-width: 400px;
-  min-width: 300px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  margin: 0 auto;
   padding: 10px 5px;
   gap: 5px;
   margin: 1.6rem 0;
   border-radius: 3px;
 }
 footer .skills div{
+  background-color: rgba(255, 255, 255, 0.171);
   border-radius: 5px;
   display: flex;
   flex-direction: column;
+  width: 80px;
   height: 70px;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
+  margin: 0 auto;
 }
 footer .skills div i{
   padding: 8px;
   font-size: 3rem;
 }
-.skills .ht{
-  background-color: firebrick;
+.skills .ht i{
+  color: firebrick;
 }
-.skills .fig{
-  background-color: purple;
-}
-.skills .css{
-  background-color: 
+.skills .css i{
+  color: 
   rgb(12, 161, 219);
 }
-.skills .js{
-  background-color: #f1d72e;
+.skills .js i{
+  color: #f1d72e;
 }
 /* MEDIAQUERY*/
 @media (min-width: 375px) {
+  /* .about-who-am-i h3{
+    font-size: 3.1rem;
+  }
+  .about-language h3{
+    font-size: 3.1rem;
+  } */
 }
 
 @media (min-width: 480px) {
