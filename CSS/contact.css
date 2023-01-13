@@ -220,7 +220,10 @@ nav .menu-icon {
   border-radius: 2px;
 }
 
-.form-desktop {
+.formulario .form-desktop {
+  display: none;
+}
+.formulario .btn-desktop{
   display: none;
 }
 
@@ -281,7 +284,12 @@ nav .menu-icon {
   .formulario form {
     display: none;
   }
-
+  .formulario form input{
+    border-bottom: 2px solid white;
+  }
+  .formulario .btn-desktop{
+    display: block;
+  }
   .formulario .form-desktop {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -293,14 +301,13 @@ nav .menu-icon {
   }
 
   .formulario .form-desktop label {
-    background-color: #182d47;
-    padding: 8px 4px;
+    background-color: transparent;
   }
 
   .formulario .form-desktop label input {
-    background: linear-gradient(to left, #0e1217, #1d262e);
-    border: none;
-    padding: 10px 5px;
+    border-top: 2px solid #145eb8;
+    margin-top: 10px; 
+    padding: 10px 0px;
   }
 
   .formulario button {
