@@ -118,15 +118,15 @@ nav .menu-icon {
   margin-left: 20px;
   padding: 5px 10px;
   border-radius: 2px;
-  border-bottom: 2px solid #182d47;
+  border-bottom: 2px solid #144647;
 }
 
 .menu-desktop div a:hover {
-  background-color: #182d47;
+  background-color: #144647;
 }
 
 .current {
-  background-color: #182d47;
+  background-color: #144647;
 }
 
 /* MAIN CONTAINER */
@@ -216,9 +216,6 @@ nav .menu-icon {
   color: aqua;
 }
 
-.about-contact{
- /*  background-color: darkblue; */
-}
 .about-contact h3{
   padding: 5px 0;
   font-size: 2rem;
@@ -296,9 +293,6 @@ footer .skills div i{
   }
 }
 
-@media (min-width: 480px) {
-}
-
 @media (min-width: 575px) {
   .menu-desktop {
     display: flex;
@@ -336,5 +330,41 @@ footer .skills div i{
     color: white;
     display: flex;
     align-items: center;
+  }
+  /* AAAA */
+  html{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-about{
+    width: 100%;
+    max-width: 768px;
+    min-width: 575px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+  }
+  .container-about .about-left{
+    width: 50%;
+    max-width: 400px;
+    min-width: 270px;
+  }
+  .container-about .about-right{
+    width: 50%;
+    max-width: 400px;
+    min-width: 270px;
+  }
+  img{
+    margin-top: 20px;
+    width: 120px;
+  }
+  footer .skills {
+    width: 100%;
+    max-width: 575px;
+    margin: 0 auto;
+    margin-top: 20px;
   }
 }
