@@ -6,16 +6,17 @@
 
 html {
   font-size: 62.5%;
-  background: url('../img/wallhaven-dpoqrg.jpg');
+  background: url("../img/wallhaven-dpoqrg.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size:cover
+  background-size: cover;
 }
 
 body {
   width: 100vw;
-  height: 100vh;
+ /*  height: 100vh; */
   font-family: "Roboto Flex", sans-serif;
+  color: white;
 }
 
 .active {
@@ -33,7 +34,6 @@ nav {
 
 nav .menu-icon {
   font-size: 2rem;
- /*  color: white; */
 }
 
 .menu-movil {
@@ -42,7 +42,7 @@ nav .menu-icon {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #0e1217;
+  background-color: #001c1d;
   z-index: 1;
   text-align: center;
 }
@@ -81,11 +81,11 @@ nav .menu-icon {
 }
 
 .menu-movil div p a:hover {
-  color: #182d47;
+  color: aqua;
 }
 
 .menu-movil div .current-movil {
-  color: #182d47;
+  color: aqua;
 }
 
 .menu-movil div .p {
@@ -128,11 +128,184 @@ nav .menu-icon {
   background-color: #182d47;
 }
 
+/* MAIN CONTAINER */
+.container-about {
+  /* background-color: darkcyan; */
+  width: 100%;
+  max-width: 400rem;
+  min-width: 30rem;
+  padding: 10px;
+  padding-top: 6rem;
+}
+/* conatiner left */
+.container-about .about-left {
+  /*   background-color: hotpink; */
+}
 
-/* mediaquery */
-@media (min-width: 375px) {}
+.about-who-am-i {
+  /* background-color: saddlebrown; */
+}
+.about-who-am-i h3 {
+  padding: 5px 0;
+  font-size: 2rem;
+}
+.about-who-am-i p {
+  padding: 5px;
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.171);
+  border-radius: 3px;
+}
 
-@media (min-width: 480px) {}
+.about-what-i-do {
+  /* background-color: saddlebrown; */
+}
+.about-what-i-do h3 {
+  font-size: 2rem;
+  padding: 5px 0;
+}
+.about-what-i-do h4 {
+  font-size: 1.5rem;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.171);
+  border-radius: 3px;
+}
+
+/* conatiner right */
+.container-about .about-right {
+  /*  background-color: firebrick; */
+}
+.about-language {
+  /*  background-color: sandybrown; */
+}
+.about-language h3 {
+  padding: 5px 0;
+  font-size: 2rem;
+}
+.hr1 {
+  height: 2px;
+  border: none;
+  background: aqua;
+  background: linear-gradient(
+    90deg,
+    aqua 100%,
+    rgba(252, 176, 69, 0) 100%
+  );
+}
+.hr2 {
+  height: 2px;
+  border: none;
+  background: aqua;
+  background: linear-gradient(
+    90deg,
+    aqua 25%,
+    rgba(252, 176, 69, 0) 25%
+  );
+}
+.about-language p {
+  padding: 5px;
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.171);
+  border-radius: 3px;
+  margin-top: 5px;
+}
+
+.about-education {
+/*   background-color: darkcyan; */
+}
+
+.about-education h3{
+  padding: 5px 0;
+  font-size: 2rem;
+}
+.about-education ul {
+  padding: 5px;
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.171);
+  border-radius: 3px;
+  list-style: none;
+}
+.about-education ul li{
+  padding-top: 5px;
+  padding-left: 20px;
+  position: relative;
+  font-size: 1.4rem;
+}
+.about-education ul li::before{
+  content: "⚪";
+  left: 0;
+  position: absolute;
+  color: aqua;
+}
+
+.about-contact{
+ /*  background-color: darkblue; */
+}
+.about-contact h3{
+  padding: 5px 0;
+  font-size: 2rem;
+}
+.about-contact p{
+  padding: 5px;
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.171);
+  border-radius: 3px;
+}
+/* Footer */
+footer {
+  width: 100%;
+  max-width: 400rem;
+  min-width: 30rem;
+  padding: 10px;
+}
+footer h3{
+  font-size: 2rem;
+  text-align: center;
+}
+footer .skills {
+  background-color: rgba(255, 255, 255, 0.171);
+  width: 100%;
+  max-width: 400px;
+  min-width: 300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 10px 5px;
+  gap: 5px;
+  margin: 1.6rem 0;
+  border-radius: 3px;
+}
+footer .skills div{
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+footer .skills div i{
+  padding: 8px;
+  font-size: 3rem;
+}
+.skills .ht{
+  background-color: firebrick;
+}
+.skills .fig{
+  background-color: purple;
+}
+.skills .css{
+  background-color: 
+  rgb(12, 161, 219);
+}
+.skills .js{
+  background-color: #f1d72e;
+}
+/* MEDIAQUERY*/
+@media (min-width: 375px) {
+}
+
+@media (min-width: 480px) {
+}
 
 @media (min-width: 575px) {
   .menu-desktop {
@@ -171,60 +344,5 @@ nav .menu-icon {
     color: white;
     display: flex;
     align-items: center;
-  }
-
-  .container-centro {
-    padding-top: 10rem;
-  }
-
-  .text {
-    width: 100%;
-    max-width: 575px;
-    min-width: 300px;
-  }
-
-  .formulario form {
-    display: none;
-  }
-  .formulario form input{
-    border-bottom: 2px solid white;
-  }
-  .formulario .btn-desktop{
-    display: block;
-  }
-  .formulario .form-desktop {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: auto;
-    gap: 10px;
-    width: 100%;
-    max-width: 575px;
-    min-width: 300px;
-  }
-
-  .formulario .form-desktop label {
-    background-color: transparent;
-  }
-
-  .formulario .form-desktop label input {
-    border-top: 2px solid #145eb8;
-    margin-top: 10px; 
-    padding: 10px 0px;
-  }
-
-  .formulario button {
-    width: 100%;
-    max-width: 360px;
-    min-width: 300px;
-    margin: 0 auto;
-    margin-top: 20px;
-    background-color: #182d47;
-    color: white;
-    font-size: 1.6rem;
-    border-style: none;
-    width: 100%;
-    height: 4rem;
-    margin-top: 15px;
-    border-radius: 2px;
   }
 }
